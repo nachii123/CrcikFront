@@ -1,0 +1,25 @@
+<div class=" ">
+
+    <!-- <h1 class="text-4xl font-extrabold text-gray-700">Live Match Score</h1> -->
+
+    <h1 class="text-4xl font-extrabold text-white-500 border-b-4 border-teal-500 pb-2 transition duration-300 ease-in-out hover:text-indigo-500 hover:border-indigo-500">
+        Live Matches
+      </h1>
+      
+
+   <div class="items-stretch card-container flex-wrap flex-col md:flex-row flex">
+
+    @for (match of liveMatches; track $index) {
+
+        <div class="p-3 md:w-[25%] w-full">
+         <app-match-card [match]="match">
+         </app-match-card>
+        </div>
+ 
+}
+@empty {
+ Sorry, for this time is no Live Matches 
+}
+   </div>
+   
+</div>

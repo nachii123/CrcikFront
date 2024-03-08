@@ -1,0 +1,27 @@
+<header class="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 p-4 text-white border-b-4 border-blue-300 transition duration-300 ease-in-out">
+    <div class="container mx-auto flex items-center justify-between">
+        <h1 class="text-3xl font-extrabold tracking-tight">CrickInformer</h1>
+
+        <!-- <nav class="flex items-center space-x-4">
+            <a [routerLink]="'/home'" href="#" class="hover:text-gray-300">Home</a>
+            <a [routerLink]="'/live'" href="#" class="hover:text-gray-300">Live Matches</a>
+            <a [routerLink]="'/point-table'" href="#" class="hover:text-gray-300">Point Table</a>
+            <a [routerLink]="'/history'" href="#" class="hover:text-gray-300">History</a>
+        </nav> -->
+        <nav class="space-x-4">
+            <a [routerLink]="'/home'" href="#" class="hover:underline">Home</a>
+            <a [routerLink]="'/live'" href="#" class="hover:underline">Live Matches</a>
+            <a [routerLink]="'/point-table'" href="#" class="hover:underline">Point Table</a>
+            <a [routerLink]="'/history'" href="#" class="hover:underline">History</a>
+        </nav>
+        
+        <div>
+            <!-- Add any additional content or icons on the right side if needed -->
+        </div>
+    </div>
+</header>
+
+<div class="px-28 py-8">
+    <router-outlet>  
+    </router-outlet>
+</div>
